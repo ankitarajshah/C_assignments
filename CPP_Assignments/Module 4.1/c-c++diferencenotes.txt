@@ -1,0 +1,45 @@
+===============================================================
+C Programming
+===============================================================
+
+C -> It is Procedural Oriented programming Language (POPL) -
+    -It follows Top-Bottom approach
+
+   -> No same Function name. i.e method overloading and operator 				overloading not supported.
+
+   -> It does not support OOP.(Object Oriented Programming).
+
+   -> it contains 32 reserved keywords.
+
+
+=====================================================================
+C++ Programming
+=====================================================================
+
+C++   -> It is an Extension of C.   -> C + Class ->C++
+      -> It is POP and OOP. 
+      -> It follows Top-Bottom and Bottom-Top approach.
+      -> Same Function name is allowed. It supports method overloading
+	and operator overloading.
+      -> It contains 63/64 reserved kerywords.
+
+=======================	
+Basic Sturcture of C++
+=========================
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	
+	return 0;
+}
+
+
+cout -> Output
+cin -> Input
+
+
+
+
+
