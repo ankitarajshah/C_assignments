@@ -13,7 +13,7 @@ class person
 		cin>>age;
 	}
 };
-class student:public person
+class student
 {
 	public:
 		int s1,s2,s3,total;
@@ -30,7 +30,7 @@ class student:public person
 		}
 		
 };
-class teacher:public student
+class teacher:public person,public student
 {
 	public:
 		string teacher_name;
