@@ -12,12 +12,14 @@ class fact
 		{
 			fac=fac*i;
 		}
-		cout<<"Factorial of number "<<n<<"is :"<<fac;
+		cout<<"Factorial of number "<<n<<" is :"<<fac<<endl;
 	}	
 	fact(const fact &f)
 	{
+		this->i=f.i;
+		this->n=f.n;
 		this->fac=f.fac;
-		cout<<"Factorial of number "<<n<<"is :"<<fac;	
+		cout<<"Factorial of number "<<n<<" is :"<<fac;	
 	}
 	
 	
@@ -25,6 +27,7 @@ class fact
 int main()
 {
 	fact p;
+	fact q(p);
 
 	return 0;
 }
