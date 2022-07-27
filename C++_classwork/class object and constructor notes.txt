@@ -1,0 +1,35 @@
+
+
+ C ++ - > C + Class
+
+Class is a Collection of Data Variables and Data Functions
+
+
+Object -> It is an real world entity.
+
+Lifecycle of an object.
+
+1) Create
+2)Use
+3) destroy
+
+example of paper cup.
+
+
+Access specifier's
+
+1)public
+2)private
+3)protected
+
+Constructor: 
+
+	It is same name as class name;
+	no return type
+	It is automatically called when the object of class is created.
+
+
+
+
+
+

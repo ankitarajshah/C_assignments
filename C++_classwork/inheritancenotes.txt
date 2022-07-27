@@ -1,0 +1,11 @@
+
+	OOP : Object Oriented Programming
+
+	4 important pillars of OOP.
+
+	1) Encapsulation
+	2) Inheritance : 
+		Creating a new class from an already existing class.
+
+	3) Polymorphism
+	4) Data Abstraction
