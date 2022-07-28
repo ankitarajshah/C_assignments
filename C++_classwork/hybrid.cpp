@@ -66,8 +66,8 @@ int main()
 {
 	result r;
 	r.getid(10);
-	r.getmarks(20,30);
-	r.getsp(20);
+	r.getmarks(80,90);
+	r.getsp(80);
 	r.display();
 	
 	
