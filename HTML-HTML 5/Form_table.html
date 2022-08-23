@@ -4,27 +4,55 @@
 	<title>REGISTRATION FORM</title>
 </head>
 <body>
-	<form>
+	<!-- Difference between GET and POST
+
+	GET : not Secure as it shows data in URL
+		: can hold 100 characters
+	POST: Secure : dowesn't show dat in URL
+		: no limit to hold data  -->
+	<center><form action="test.html" method="post">
 	<table border="1">
-		<th>REGISTRATION FORM</th>
+		<th colspan="2">REGISTRATION FORM</th>
 			<tr>
 				<td>Name :</td>
-				<td><input type="text" name=""></td>
+				<td><input type="text" name="" required="[a-zA-Z]+" title="3 to 6 characters only...."></td>
 			</tr>
 			<tr>
 				<td>Email ID :</td>
-				<td><input type="email" name=""></td>
+				<td><input type="email" name="" required="[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]+"></td>
+			</tr>
+			<tr>
+				<td>Mobile :</td>
+				<td><input type="text" name="" required="[0-9]{10}" title="10 digits only...!"></td>
 			</tr>
 			<tr>
 				<td>Password :</td>
 				<td><input type="" name=""></td>
 			</tr>
 			<tr>
+			<tr>
+				<td>Confirm Password :</td>
+				<td><input type="Password" name="pwd"></td>
+				<input type="" name="">
+			</tr>
+			<tr>
 				<td>Gender :</td>
 				<td>
 					<input type="radio" name="gender">Male
 					<input type="radio" name="gender">Female
-				</td> <br>
+				</td> 
+			</tr>
+			<tr>
+				<td>Address :</td>
+				<td><textarea rows="2" cols="30"> </textarea></td>
+			</tr>
+			<tr>
+				<td>Hobbies :</td>
+				<td>
+					<input type="checkbox" name="">Music
+					<input type="checkbox" name="">Dance
+					<input type="checkbox" name="">Singing
+				</td>
 			</tr>
 			<tr>
 				<td>Languages :</td>
@@ -40,18 +68,47 @@
 			</tr>
 			
 			<tr>
-				<td>Date Time :<input type="datetime-local" name=""></td>
+				<td>Date Time :</td>
+				<td><input type="datetime-local" name=""></td>
 				
 			</tr>
+			<tr>
+				<td>Select Country</td>
+				<td>
+					<select>
+						<option hidden="">---Select Your Country---</option>
+						<option>India</option>
+						<option>USA</option>
+						<option>Australia</option>
+						<option>UK</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Color :</td>
+				<td><input type="color" name=""></td>
+			</tr>
+
+			<tr>
+				<td>Quantity :</td>
+				<td><input type="number" name="" min="1" max="5"></td>
+			</tr>
 			
-			Color :<input type="color" name=""><br>
-			Quantity :<input type="number" name=""><br>
-			Upload Image:<input type="file" name=""><br>
-
-
-			<input type="SUBMIT" name="">
-			<input type="RESET" name="">
+			<tr>
+				<td>Upload Image :</td>
+				<td> <input type="file" name=""></td>
+			</tr>
+			
+			<tr>
+				<td colspan="2"><center><input type="SUBMIT" name="" value="Sign up"></center></td>
+			</tr>
+			<tr>
+				<td colspan="2"><center><input type="RESET" name=""></center></td>
+			</tr>
+			
+			
 	</table>
-	</form>
+	</form></center>
+
 </body>
 </html>
