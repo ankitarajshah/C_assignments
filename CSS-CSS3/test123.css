@@ -1,0 +1,45 @@
+*{box-sizing: border-box;margin: 0;padding: 0;}
+.header
+{
+	height: 150px;
+	width: 100%;
+	background: lightblue;
+	text-align: center;
+	line-height: 150px;
+	font-size: 30px;
+	font-weight: bold;
+
+}
+.navigation
+{
+	height: 50px;
+	width: 100%;
+	background: gray;
+	text-align: center;
+	line-height: 50px;
+	font-size: 30px;
+	font-weight: bold;
+}
+.content
+{
+	height: 650px;
+	width: 100%;
+	background: lightblue;
+	text-align: center;
+	line-height: 650px;
+	font-size: 30px;
+	font-weight: bold;
+	display: flex;
+}
+.content .p1
+{
+	height: 650px;
+	width: 50%
+	border: 4px solid;
+}
+.content .p1 .up .x
+{
+	height: 325px;
+	width: 25%
+	border:4px solid;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		*{box-sizing: border-box;margin: 0;padding: 0;}
+		.nav 
+		{
+			/*list-style: none;
+			float: left;*/
+			height: 50px;
+			width: 100%;
+			background: lightblue;
+			text-align: center;
+			padding-top: 10px;
+			/*display: flex;
+			justify-content: center;
+			align-items: center;*/ 
+		}
+		.main-menu .menu
+		{
+			display: inline;
+			margin: 0 20px 0 0;
+		}
+		.dropdown li
+		{
+			list-style: none;
+		}
+
+		.main-menu
+		{
+			position: relative;
+		}
+		.dropdown
+		{
+			display: none;
+			position: absolute;
+			top: 100%;
+			left:50%;
+		}
+		.main-menu a
+		{
+			text-decoration: none;
+			color: black;
+		}
+		.menu:hover .dropdown
+		{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="nav">
+	<ul class="main-menu">
+		<li class="menu"><a href="">Home</a></li>
+		<li class="menu"><a href="">About</a></li>
+		<li class="menu"><a href="">Service</a>
+			<ul class="dropdown">
+				<li><a href="">S1</a></li>
+				<li><a href="">S2</a></li>
+				<li><a href="">S3</a></li>
+			</ul>
+		</li>
+		<li class="menu"><a href="">Contact</a></li>
+	</ul>
+	</div
+
+</body>
+</html>
