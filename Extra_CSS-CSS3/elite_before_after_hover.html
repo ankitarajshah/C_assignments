@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>before_after_hover</title>
+	<style type="text/css">
+		div
+		{
+			height: 500px;
+			width: 500px;
+/*			background: coral;
+*/			
+			background: url(E:/Ankita/GitHub/Ankita/Images/elite_girl.jpg);
+			margin: auto;
+			margin-top: 100px;
+			color: black;
+			font-size: 50px;
+			line-height: 100px;
+			margin: 100px auto;
+			text-align: center;
+			position: relative;
+			z-index: 0;
+			overflow: hidden;
+		}
+
+		div::after
+		{
+			content: "";
+			position: absolute;
+			top: 0px;
+			left:0px;
+			height: 500px;
+			width: 500px;
+			background:pink;
+			transform: translate(-100%,200%);
+			transition: 2s;
+			z-index: -1;
+			opacity: 0.2;
+		}
+		div:hover::after
+		{
+			transform: translate(0,0);
+		}
+		div::before
+		{
+			content: "";
+			position: absolute;
+			top: 0px;
+			left:0px;
+			height: 500px;
+			width: 500px;
+			background:pink;
+			transform: translate(100%,-100%);
+			transition: 2s;
+			z-index: -1;
+			opacity: 0.2;
+		}
+		div:hover::before
+		{
+			transform: translate(0,0);
+		}
+
+
+
+
+
+	</style>
+
+</head>
+<body>
+	<div>
+		Hover 
+	</div>
+
+</body>
+</html>
