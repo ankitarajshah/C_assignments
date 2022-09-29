@@ -13,9 +13,9 @@
 	{
 		height: 200px;
 		width: 200px;
-		background: transparent;
-		border: transparent;
-		border: 12px solid transparent;
+		background: red;
+		border: green;
+		border: 12px solid;
 		border-top: 12px solid lightblue;
 		margin: 100px auto;
 		padding: 12px;
@@ -23,8 +23,8 @@
 		/*animation: preloader;
 		animation-duration: 3s;
 		animation-iteration-count: 5;*/
-		/*box-shadow: 0 0 35px grey;*/
-		animation: preload1 3s linear infinite;
+		box-shadow: 0 0 35px grey;
+		animation: preloader 3s linear infinite;
 	}
 
 	.y
@@ -32,13 +32,13 @@
 	{
 		height: 150px;
 		width: 150px;
-		background: transparent;
-		border: transparent;
-		border: 12px solid transparent;
+		background: green;
+		border: black;
+		border: 12px solid;
 		border-top: 10px solid coral;
 		padding: 12px;
 		border-radius:50%;
-		animation: preload2 3s linear infinite;
+		animation: preload 3s linear infinite;
 		
 	}
 	.z
@@ -46,41 +46,38 @@
 	{
 		height: 100px;
 		width: 100px;
-		background: transparent;
-		border: transparent;
-		border: 12px solid transparent;
+		background: pink;
+		border: black;
+		border: 12px solid;
 		border-top: 10px solid lightblue;
 		padding: 12px;
 		border-radius:50%;
-		animation: preload1 1s linear infinite;
 		
 	}
 	.a
 	{
 		height: 50px;
 		width: 50px;
-		background: transparent;
-		border: transparent;
-		border: 12px solid transparent;
-		border-top: 10px solid orange;
+		background: orange;
+		border: black;
+		border: 12px solid;
+		border-top: 10px solid lightblue;
 		border-radius:50%;
-		animation: preload2 2s linear infinite;
 		
 	}
 		
-	@keyframes preload1 
+	@keyframes preloader 
 	{
 		0%{ transform: rotate(0deg); }
 		100%{ transform: rotate(360deg); }
 		
 	}
-	@keyframes preload2 
+	@keyframes preload 
 	{
-		0%{ transform: rotate(0deg); }
-		100%{ transform: rotate(-720deg); }
+		0%{ transform: rotate(360deg); }
+		100%{ transform: rotate(0deg); }
 		
 	}
-	
 	</style>
 </head>
 <body>

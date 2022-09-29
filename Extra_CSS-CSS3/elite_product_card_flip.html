@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elite product card flip</title>
+	<style type="text/css">
+		*{box-sizing: border-box;margin: 0:padding:0;}
+		.main
+		{
+			height: 450px;
+			width: 100%;
+			/*background: red;*/
+			display: flex;
+
+		}
+		.a
+		{
+			height: 450px;
+			width: 25%;
+			background:blue;
+			padding:20px;
+			position: relative;
+
+		}
+		.a .prdfront
+		{
+			height: 250px;
+			width: 100%;
+			position: absolute;
+			backface-visibility: hidden;
+			transform: rotateX(0deg);
+			transition: 1s;
+		}
+		.a .prdback
+		{
+			height: 250px;
+			width: 100%;
+			position: absolute;
+			backface-visibility: hidden;
+			transform: rotateX(180deg);
+			transition: 1s;
+		}
+
+		.a:hover .prdfront
+		{
+			transform: rotateX(180deg);
+		}
+		.a:hover .prdback
+		{
+			transform: rotateX(0deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+	
+		<div class="a">
+			<div class="prdfront">
+				<img src="E:/Ankita/GitHub/Ankita/Images/jeans.jpg"height="100%" width="100%">
+			</div>
+			<div class="prdback">
+				<img src="E:/Ankita/GitHub/Ankita/Images/jeans.jpg"height="100%" width="100%">
+			</div>
+		</div>
+
+		<div class="a">
+			<div class="prdfront">
+				<img src="E:/Ankita/GitHub/Ankita/Images/watch.jpg"height="100%" width="100%">
+			</div>
+			<div class="prdback">
+				<img src="E:/Ankita/GitHub/Ankita/Images/watch.jpg"height="100%" width="100%">
+			</div>
+			
+		</div>
+		<div class="a">
+			<div class="prdfront">
+				<img src="E:/Ankita/GitHub/Ankita/Images/blazzer.jpg"height="100%" width="100%">
+			</div>
+			<div class="prdback">
+				<img src="E:/Ankita/GitHub/Ankita/Images/blazzer.jpg"height="100%" width="100%">
+			</div>
+			
+		</div>
+		<div class="a">
+			<div class="prdfront">
+				<img src="E:/Ankita/GitHub/Ankita/Images/belt.jpg"height="100%" width="100%">
+			</div>
+			<div class="prdback">
+				<img src="E:/Ankita/GitHub/Ankita/Images/belt.jpg"height="100%" width="100%">
+			</div>
+			
+		</div>
+		
+	</div>
+
+</body>
+</html>

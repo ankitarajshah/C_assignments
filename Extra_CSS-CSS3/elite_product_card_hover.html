@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elite_product_flip</title>
+	<style type="text/css">
+		*{box-sizing: border-box;margin: 0;padding: 0;}
+		.main
+		{
+			height: 450px;
+			width: 100%;
+			background: transparent;
+			display:flex; 	
+		}
+		.a 
+		{
+			height: 450px;
+			width:25%;
+			background:transparent;
+			box-shadow: 0 0 30px #000;
+			position: relative;
+		}
+		
+		.a .prd
+		{
+			height: 250px;
+			/*background: grey;*/
+			padding: 25px;
+
+		}
+		.a .prd_view
+		{
+			height: 50px;
+			width: 100%;
+			background: black;
+			font-family: sans-serif;
+			text-align: center;
+			line-height:50px;
+			font-weight: bold;
+			color: white;
+			position: absolute;
+			top:0px;
+			right: 0px;
+			opacity: 0;
+		}
+		.a:hover .prd_view
+		 {
+		 	animation:movedown 1s forwards;
+		 	animation: moveup 1s backwards;
+		 }
+
+		 @keyframes movedown
+		 {
+		 	0%{top: 0px;opacity: 0}
+		 	100%{top: 250px;opacity: 1}
+		 }
+
+		 @keyframes moveup
+		 {
+		 	100%{top: 250px;opacity: 1}
+		 	0%{top: 0px;opacity: 0}
+		 }
+
+		.a .prd_info 
+		{
+			font-family: sans-serif;
+			color: coral;
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			padding-top: 70px;
+		}
+		.a .prd_info p
+		{
+			margin-bottom: 20px;
+		}
+
+		/*.b
+		{
+			height: 500px;
+			width:25%;
+			background:blue;
+		}
+		.c
+		{
+			height: 500px;
+			width:25%;
+			background:pink;
+		}
+		.d
+		{
+			height: 500px;
+			width:25%;
+			background:coral;
+		}*/
+	</style>
+
+</head>
+<body>
+	<div class="main">
+		<div class="a">
+			<div class="prd">
+				<img src="E:/Ankita/GitHub/Ankita/Images/jeans.jpg"height="100%" width="100%">
+			</div>
+			<div class="prd_view">
+				QUICK VIEW
+			</div>
+			<div class="prd_info">
+				<p>Men's Blue Jeans</p>
+				<p>$60.99  $90.71</p>
+				<p><button style="background: lightblue;border-radius: 10px;">ADD TO CART</button></p>
+			</div>
+		</div>
+		
+		<div class="a">
+			<div class="prd">
+				<img src="E:/Ankita/GitHub/Ankita/Images/watch.jpg"height="100%" width="100%">
+			</div>
+			<div class="prd_view">
+				QUICK VIEW
+			</div>
+			<div class="prd_info">
+				<p>Analog Watch</p>
+				<p> $160.99 $290.71 </p>
+				<p><button style="background: lightblue;border-radius: 10px;">ADD TO CART</button></p>
+			</div>
+		</div>
+		<div class="a">
+			<div class="prd">
+				<img src="E:/Ankita/GitHub/Ankita/Images/blazzer.jpg"height="100%" width="100%">
+			</div>
+			<div class="prd_view">
+				QUICK VIEW
+			</div>
+			<div class="prd_info">
+				<p>Party Men's Blazer</p>
+				<p>$260.99 $390.71 </p>
+				<p><button style="background: lightblue;border-radius: 10px;">ADD TO CART</button></p>
+			</div>
+		</div>
+		<div class="a">
+			<div class="prd">
+				<img src="E:/Ankita/GitHub/Ankita/Images/belt.jpg"height="100%" width="100%">
+			</div>
+			<div class="prd_view">
+				QUICK VIEW
+			</div>
+			<div class="prd_info">
+				<p>Reversible Belt</p>
+				<p>$30.99  $50.71</p>
+				<p><button style="background: lightblue;border-radius: 10px;">ADD TO CART</button></p>
+			</div>
+		</div>
+</div>
+
+</body>
+</html>

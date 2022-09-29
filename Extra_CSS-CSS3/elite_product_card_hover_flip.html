@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elite product card hover flip</title>
+	<style type="text/css">
+		*{box-sizing: border-box;margin: 0:padding:0;}
+		.main
+		{
+			height: 450px;
+			width: 100%;
+			/*background: red;*/
+			display: flex;
+		}
+		.a
+		{
+			height: 450px;
+			width: 25%;
+			background:transparent;
+			padding:30px;
+			position: relative;
+
+		}
+		.a .prd_view
+		{
+			height: 50px;
+			width: 100%;
+			background: black;
+			font-family: sans-serif;
+			text-align: center;
+			line-height:50px;
+			font-weight: bold;
+			color: white;
+			position: absolute;
+			top:0px;
+			right: 0px;
+			opacity: 0;
+			transition: 1s;
+		}
+		.a:hover .prd_view
+		 {
+		 	/*animation:movedown 1s forwards;*/
+		 	top:250px;
+		 	opacity: 1;
+		 }
+
+		/* @keyframes movedown
+		 {
+		 	0%{top: 0px;opacity: 0}
+		 	50%{top: 250px;opacity: 1}
+
+		 }*/
+		/* .a:hover .prd_view
+		 {
+		 	animation: moveup 1s backwards;
+		 }
+		 @keyframes moveup
+		 {
+		 	100%{top: 250px;opacity: 1}
+		 	0%{top: 0px;opacity: 0}
+		 }*/
+
+		.a .prd_info 
+		{
+			font-family: sans-serif;
+			color: coral;
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+			padding-top: 250px;
+		}
+		.a .prd_info p
+		{
+			margin-bottom: 50px;
+		}
+		.a .prdfront
+		{
+			height: 250px;
+			width: 100%;
+			position: absolute;
+			backface-visibility: hidden;
+			transform: rotateY(0deg);
+			transition: 1s;
+		}
+		.a .prdback
+		{
+			height: 250px;
+			width: 100%;
+			position: absolute;
+			backface-visibility: hidden;
+			transform: rotateY(180deg);
+			transition: 1s;
+		}
+
+		.a:hover .prdfront
+		{
+			transform: rotateY(180deg);
+		}
+		.a:hover .prdback
+		{
+			transform: rotateY(0deg);
+		}
+		button
+		{
+			position: relative;
+			height: 30px;
+			width: 120px;
+			background: blue;
+
+
+		}
+		button:hover::after
+		{
+			opacity: 1;
+			transform: scale(1.3);
+		}
+		button::after
+		{
+			content: "";
+			height: 30px;
+			width: 100px;
+			border:4px solid black;
+			position: absolute;
+			top:-6px;
+			left:3px;
+			opacity: 0;
+			transition: 1s;
+
+		}
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="main">
+	
+		<div class="a">
+			<div class="prdfront">
+				<img src="E:/Ankita/GitHub/Ankita/Images/jeans.jpg"height="100%" width="100%">
+			</div>
+			<div class="prdback">
+				<img src="E:/Ankita/GitHub/Ankita/Images/jeans.jpg"height="100%" width="100%">
+			</div>
+			<div class="prd_view">
+				QUICK VIEW
+			</div>
+			<div class="prd_info">
+				<p>Men's Blue Jeans</p>
+				<p>$60.99  <span style="text-decoration:line-through;">$90.71</span></p>
+					<button>ADD TO CART</button>
+			</div>
+		</div>
+
+		<div class="a">
+			<div class="prdfront">
+				<img src="E:/Ankita/GitHub/Ankita/Images/watch.jpg"height="100%" width="100%">
+			</div>
+			<div class="prdback">
+				<img src="E:/Ankita/GitHub/Ankita/Images/watch.jpg"height="100%" width="100%">
+			</div>
+			<div class="prd_view">
+				QUICK VIEW
+			</div>
+			<div class="prd_info">
+				<p>Analog Watch</p>
+				<p> $160.99 <span style="text-decoration:line-through;">$290.71</span>  </p>
+					<button>ADD TO CART</button>
+			</div>
+			
+		</div>
+		<div class="a">
+			<div class="prdfront">
+				<img src="E:/Ankita/GitHub/Ankita/Images/blazzer.jpg"height="250px" width="250px">
+			</div>
+			<div class="prdback">
+				<img src="E:/Ankita/GitHub/Ankita/Images/blazzer.jpg"height="250px" width="250px">
+			</div>
+			<div class="prd_view">
+				QUICK VIEW
+			</div>
+			<div class="prd_info">
+				<p>Party Men's Blazer</p>
+				<p>$260.99 <span style="text-decoration:line-through;">$390.71</span></p>
+					<button>ADD TO CART</button>
+			</div>
+			
+		</div>
+		<div class="a">
+			<div class="prdfront">
+				<img src="E:/Ankita/GitHub/Ankita/Images/belt.jpg"height="250px" width="250px">
+			</div>
+			<div class="prdback">
+				<img src="E:/Ankita/GitHub/Ankita/Images/belt.jpg"height="250px" width="250px">
+			</div>
+			<div class="prd_view">
+				QUICK VIEW
+			</div>
+			<div class="prd_info">
+				<p>Reversible Belt</p>
+				<p>$30.99 <span style="text-decoration:line-through;">$50.71</span></p>
+				<button>ADD TO CART</button>
+			</div>
+			
+		</div>
+		
+	</div>
+
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<style type="text/css">
+		
+		div
+		{
+			height: 200px;
+			width: 200px;
+			background: grey;
+			animation-name: animate;
+			animation-duration: 5s;
+			animation-iteration-count: 5;
+
+		}
+		@keyframes animate
+		{
+			0%{background:gray;}
+			20%{background:green;}
+			40%{background:blue;height: 100px;width: 100px;border-radius: 50%}
+			60%{background:transparent;transform: translate(500px,100px);}
+			80%{background:purple;width: 30px;transform: (-100px,100px);}
+			100%{background:red;}
+		}
+		
+	</style>
+</head>
+<body>
+	<div>
+		
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>La pino</title>
+	<style type="text/css">
+		*{box-sizing: border-box;margin: 0;padding:0;}
+		.header
+		{
+			height: 80px;
+			width: 100%;
+			background:white;
+			display: flex;
+			position: sticky;
+			top:0;
+
+		}
+		.header .logo
+		{
+			height: 80px;
+			width: 20%;
+			/*background: red;*/
+			text-align: center;
+			padding-top: 12px;
+		}
+		.header .navbar
+		{
+			height: 80px;
+			width: 80%;
+			/*background: green;*/
+			text-align: right;
+			padding-right: 35px;
+			padding-top: 35px;
+		}
+		.header .navbar ul li
+		{
+			list-style: none;
+			/*float:left;*/
+			display: inline;
+			margin-right: 25px;
+
+		}
+		.header .navbar ul li a
+		{
+			text-decoration: none;
+			color: black;
+			font-size: 25;
+			font-family: sans-serif; 
+		}
+		.header .navbar ul li a button
+		{
+			background: #00572d;
+			border: none;
+			border-radius: 3px;
+			font-size: 25;
+			font-family: sans-serif; 
+			padding: 3px;
+		}
+		.slider
+		{
+			height: 500px;
+			width: 100%;
+			background: linear-gradient(black ,rgba(0, 0, 0, 0.1)), url("E:/Ankita/GitHub/Ankita/Images/lapino/banner1.jpg");
+			background-size: 100% 100%;
+
+			text-align: center;
+			padding-top: 100px;
+			font-family: sans-serif;
+			font-size: 25px;
+			color: white;
+		}
+		.s1
+		{
+			height: 50px;
+			width: 250px;
+			font-size: 18px;
+			font-family: sans-serif;
+			color: black;
+			font-weight: normal;
+			border-radius: 20px 0 0 20px;
+			border:none;
+		}
+		.s2
+		{
+			height: 50px;
+			width: 250px;
+			font-size: 18px;
+			font-family: sans-serif;
+			color: black;
+			font-weight: normal;
+			border:none;
+			border-radius: 0px 20px 20px 0px;
+			margin-left: -10px;
+		}
+
+		.deals_offers
+		{
+			height: 350px;
+			width: 100%;
+			display: flex;
+
+			background:grey;
+
+		}
+		.deals_offers .offers
+		{
+			height: 300px;
+			width: 33.33%;
+			margin:10px;
+			/*border:10px solid black;*/
+			border-radius: 40px;
+			overflow: hidden;
+			
+		}
+
+		.explore
+		{
+			height: 250px;
+			width: 100%;
+			/*background:pink;*/
+			display: flex;
+		}
+		.explore .exp
+		{
+			height: 180px;
+			width: 16.66%;
+			margin:25px;
+			font-family: sans-serif;
+			font-size: 14px;
+			text-align: center;
+			font-weight: bold;
+			padding: 10px;
+		}
+
+		.name
+		{
+			margin-top: 20px;
+		}
+
+		.explore .exp :hover
+		{
+			transform: scale(1.2);
+		}
+
+		.ex
+		{
+			height: 200px;
+			width: 100%;
+			/*background:red;*/
+		}
+
+		.ext  
+		{
+			height: 180px;
+			width: 100%;
+			/*background: blue;*/
+			display: flex;
+		}
+		.ex .ext .a
+		{
+			height: 140px;
+			width: 140px;
+			/*background: black;*/
+			background: url("E:/Ankita/GitHub/Ankita/Images/lapino/exp1.png");
+			background-size: 100% 100%;
+			margin-left: 60px;
+		}
+		.ex .ext .b
+		{
+			height: 140px;
+			width: 140px;
+			/*background: blue;*/
+			background: url("E:/Ankita/GitHub/Ankita/Images/lapino/exp2.png");
+			background-size: 100% 100%;
+			margin-left: 60px;
+		}
+		.ex .ext .c
+		{
+			height: 140px;
+			width: 140px;
+			/*background: black;*/
+			background: url("E:/Ankita/GitHub/Ankita/Images/lapino/exp3.png");
+			background-size: 100% 100%;
+			margin-left: 60px;
+		}
+		.ex .ext .d
+		{
+			height: 140px;
+			width: 140px;
+			/*background: blue;*/
+			background: url("E:/Ankita/GitHub/Ankita/Images/lapino/exp4.png");
+			background-size: 100% 100%;
+			margin-left: 60px;
+		}
+		.ex .ext .e
+		{
+			height: 140px;
+			width: 140px;
+			/*background: black;*/
+			background: url("E:/Ankita/GitHub/Ankita/Images/lapino/exp5.png");
+			background-size: 100% 100%;
+			margin-left: 60px;
+			animation: changeimages 1s infinite;
+		}
+		.ex .ext .f
+		{
+			height: 140px;
+			width: 140px;
+			/*background: black;*/
+			background: url("E:/Ankita/GitHub/Ankita/Images/lapino/exp6.gif");
+			margin-left: 60px;
+			background-size: 100% 100%;
+		}
+		.name1
+		{
+			margin-top: 150px;
+			text-align: center;
+		}
+		.ext .part1:hover
+		{
+			transform: scale(1.2);
+		}
+		
+
+		@keyframes changeimages
+		{
+			0%{background: url("E:/Ankita/GitHub/Ankita/Images/lapino/exp1.png");background-size: 100% 100%;}
+			20%{background: url("E:/Ankita/GitHub/Ankita/Images/lapino/exp2.png");background-size: 100% 100%;}
+			40%{background: url("E:/Ankita/GitHub/Ankita/Images/lapino/exp3.png");background-size: 100% 100%;}
+			60%{background: url("E:/Ankita/GitHub/Ankita/Images/lapino/exp4.png");background-size: 100% 100%;}
+			80%{background: url("E:/Ankita/GitHub/Ankita/Images/lapino/exp5.png");background-size: 100% 100%;}
+			100%{background: url("E:/Ankita/GitHub/Ankita/Images/lapino/exp1.png");background-size: 100% 100%;}
+		}
+
+		h1
+		{
+			font-family: sans-serif;
+			font-weight: bold;
+		}
+
+		.best_sellers
+		{
+			height: 250px;
+			width: 100%;
+			background: grey;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">
+			<img src="E:/Ankita/GitHub/Ankita/Images/lapino/lapinoz-logo.png" height="50px" width="150px">
+		</div>
+		<div class="navbar">
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">Our Story</a></li>
+				<li><a href="">Store Locator</a></li>
+				<li><a href="">Contact Us</a></li>
+				<li><a href="">Franchise Enquiry</a></li>
+				<li><a href="">Order Online</a></li>
+				<li><a href=""><button>Login</button></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="slider">
+		<h1>More Than 400+ OUTLETS<h1>
+		<h1 style="color: yellow;">LIVE ACROSS INDIA</h1><br>
+		<p>ORDER PIZZA ONLINE IN YOUR AREA</p>
+
+		<!--  <div class="ban1"> banner2
+			<div class="numbertext">2 / 3</div>
+				<img src="E:/Ankita/GitHub/Ankita/Images/lapino/banner2.jpg" height="500px" width="100%">
+				<div class="text">Caption Text</div>
+		 </div>
+
+		 <div class="ban1"> banner3
+			<div class="numbertext">3 / 3</div>
+				<img src="E:/Ankita/GitHub/Ankita/Images/lapino/banner3.jpg" height="500px" width="100%">
+				<div class="text">Caption Text</div>
+		 </div> -->
+		<p>
+		<select class="s1">
+		 		<option value="hidden">Select your city</option>
+		 		<option>Ahmedabad</option>
+		 		<option>Baroda</option>
+		 		<option>Surat</option>               	                                                     
+		</select>
+ 		<select class="s2">
+		 		<option value="hidden">Select Your Favourite Outlet </option>
+		 		<option>C.G Road</option>
+		 		<option>Science City</option>
+		 		<option>Ashram Road</option>	                                                     
+		</select>
+		</p>
+		<p style="padding: 10px;font-family: sans-serif;font-size: 20px;">DOWNLOAD THE APP FOR SEAMLESS EXPERIENCE</p>
+		<span style="background:black;border-radius: 20px; font-size: 18px;font-family: sans-serif;padding: 8px;">DOWNLOAD</span>
+	</div>
+	<h1>Deals and Offers</h1>
+	<div class="deals_offers">
+	<!-- <h2>Deals and Offers</h2> -->
+		<div class="offers"><img src="E:/Ankita/GitHub/Ankita/Images/lapino/deals-banner1.jpg" height="100%" width="100%"></div>
+		<div class="offers"><img src="E:/Ankita/GitHub/Ankita/Images/lapino/deals-banner2.jpg" height="100%" width="100%"></div>
+		<div class="offers"><img src="E:/Ankita/GitHub/Ankita/Images/lapino/deals-banner3.jpg" height="100%" width="100%"></div>
+		<div class="offers"><img src="E:/Ankita/GitHub/Ankita/Images/lapino/deals-banner4.jpg" height="100%" width="100%"></div>
+		<div class="offers"><img src="E:/Ankita/GitHub/Ankita/Images/lapino/deals-banner5.jpg" height="100%" width="100%"></div>
+	</div>
+
+	<h1>Explore</h1>
+	<div class="explore">
+		<div class="exp"><img src="E:/Ankita/GitHub/Ankita/Images/lapino/exp1.png" height="100%" width="100%"> 
+			<p class="name">Veg Pizza</p>
+		</div>
+		<div class="exp"><img src="E:/Ankita/GitHub/Ankita/Images/lapino/exp2.png" height="100%" width="100%">
+			<p class="name">Classic Pizza for Classic Maniacs</p>
+		</div>
+		<div class="exp"><img src="E:/Ankita/GitHub/Ankita/Images/lapino/exp3.png" height="100%" width="100%">
+			<p class="name">Sides</p>
+		</div>
+		<div class="exp"><img src="E:/Ankita/GitHub/Ankita/Images/lapino/exp4.png" height="100%" width="100%">
+			<p class="name">Classic Pizza Pack of 4</p>
+		</div>
+		<div class="exp"><img src="E:/Ankita/GitHub/Ankita/Images/lapino/exp5.png" height="100%" width="100%">
+			<p class="name">Pasta</p>
+		</div>
+		<div class="exp"><img src="E:/Ankita/GitHub/Ankita/Images/lapino/exp6.gif" height="100%" width="100%">
+			<p class="name">September Flat Deal</p>
+		</div>
+	</div>
+
+	<h1>Extra explore</h1>
+	
+	<div class="ex">
+		<div class="ext">
+			<div class="part1 a"><p class="name1">Veg Pizza</p></div>
+			<div class="part1 b"><p class="name1">Classic Pizza for Classic Maniacs</p></div>
+			<div class="part1 c"><p class="name1">Sides</p></div>
+			<div class="part1 d"><p class="name1">Classic Pizza Pack of 4</p></div>
+			<div class="part1 e"><p class="name1">Pasta</p></div>
+			<div class="part1 f"><p class="name1">September Flat deal</p></div>
+		</div>
+	</div>
+	<div class="best_sellers">
+		<div class="best m">
+			<div class="besttext">
+				<h4>Country Side Pizza</h4>
+				<p>A country side mood goes well with..</p>
+			</div>
+		</div>
+		<div class="best n"></div>
+		<div class="best o"></div>
+		<div class="best p"></div>
+
+</div>
+</body>
+</html>
