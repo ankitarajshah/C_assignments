@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid_media</title>
+	<style type="text/css">
+		*{box-sizing: border-box;margin:0;padding: 0;}
+
+		.header
+		{
+			height: 200px;
+			width: 100%;
+			background: pink;
+			display: grid;
+			border: 3px solid black;
+			grid-template-columns: 1fr 4fr 5fr;
+		}	
+
+		.header .logo
+		{
+			height: 100px;
+			background: red;
+		}
+		.header .cname
+		{
+			height: 50px;
+			background: green;
+		}
+		.header .name
+		{
+			height: 50px;
+			background: blue;
+		}
+
+		@media (max-width: 1100px)
+		{
+			.header{grid-template-columns: 1fr 9fr}
+		}
+	</style>
+
+</head>
+<body>
+	<div class="header">
+		<div class="logo">part 1</div>
+		<div class="cname">part 2</div>
+		<div class="name">part 3</div>
+	</div>
+</body>
+</html>
