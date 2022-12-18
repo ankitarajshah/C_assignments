@@ -1,0 +1,32 @@
+/*
+1400
+1200
+992
+768
+576*/
+
+@media(min-width: 500px)
+{
+	.header .cont1{grid-template-columns: 1fr;}
+	.header .cont1 .logo{padding: 0px 100px;}
+	/*.header .texmain .searchform{grid-template-columns: 1fr;}*/
+	
+	
+
+}
+@media(min-width: 700px)
+{
+	.header .cont1 .logo{padding: 0px 250px;}
+
+
+}
+@media(min-width: 900px)
+{
+	.header .cont1 .logo{padding: 0px 0px;}
+	.header .cont1{grid-template-columns: 1fr 4fr 5fr;}
+}
+@media(min-width: 1200px)
+{
+	.header .cont1{grid-template-columns: 1fr 5fr 4fr;}
+}
+
